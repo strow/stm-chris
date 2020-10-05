@@ -1,0 +1,103 @@
+#+startup: beamer
+#+Options: toc:nil H:1
+#+LaTeX_CLASS_OPTIONS: [10pt,t]
+#+TITLE: \large AIRS RTA and BT Tuning: 
+#+BEAMER_HEADER: \subtitle{\footnotesize{RTA Tuning Telecon}}
+#+BEAMER_HEADER: \date{\vspace{0.1in}\footnotesize{June 25, 2020 \vfill}}
+#+BEAMER_HEADER: \author{L. Larrabee Strow}
+#+BEAMER_HEADER: \input beamer_setup
+#+BEAMER_HEADER: \usetheme{metropolis}
+#+BEAMER_HEADER: \metroset{titleformat title=allcaps}
+#+BEAMER_HEADER: \setbeamercolor{alert}{fg=maroon}
+#+BEAMER_HEADER: \renewcommand{\UrlFont}{\small\tt}
+#+BEAMER_HEADER: \renewcommand*{\UrlFont}{\footnotesize}
+#+BEAMER_HEADER: \tolerance=1000
+#+BEAMER_HEADER: \RequirePackage{fancyvrb}
+#+BEAMER_HEADER: \DefineVerbatimEnvironment{verbatim}{Verbatim}{fontsize=\footnotesize}
+#+BEGIN_EXPORT latex
+\addtobeamertemplate{block begin}{
+  \setlength{\parsep}{0pt}
+  \setlength{\topsep}{3pt plus 2pt minus 2.5pt}
+  \setlength{\itemsep}{0pt plus 0pt minus 2pt}
+  \setlength{\partopsep}{2pt}
+}
+#+END_EXPORT
+
+* Introduction
+- 17 days of AIRS clear ocean scene radiances are compared to ECMWF simulations
+- Three RTA variants tested:
+  - L1c RTA
+  - L1b RTA as tuned for V6 Level 2 retrievals
+  - L1b RTA without tuning
+- The L1c RTA uses HITRAN 2016 and new (improvements?) to the continuum and line mixing
+- The L1b RTA is circa 2008
+- Conclusions here assume ECMWF is "truth".  Better than 5% --> 0.3K?
+* Longwave Biases: All RTAs
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./bias_3rta_lw.pdf]]
+* Longwave Biases w/o L1btuning RTA
+L1c RTA appears a bit better.  (Note fill channels included!)
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./bias_3rta_lw_noL1btuning.pdf]]
+* Longwave Biases just L1btuning RTA
+Tuning removes biases mostly to levels lower than either RTA, esp. for trop. channels
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./bias_3rta_lw_justL1btuning.pdf]]
+* Midwave Biases: All RTAs
+L1c slightly "worse" than L1b.  Tuned L1b high bias, but smooth with \wn
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./bias_3rta_mw.pdf]]
+* Midwave Biases w/o L1btuning RTA 
+Mixed bag: although L1b untuned biases are smaller on average
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./bias_3rta_mw_noL1btuning.pdf]]
+* Midwave Biases Just L1btuning RTA
+Clear that L1b tuning removes channel-to-channel variability (help convergence?)
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./bias_3rta_mw_justL1btuning.pdf]]
+* 650-700 \wn Biases vs BTobs
+Strat channels: L1b tuned clear bias trend with BTobs, unlike untuned RTAs
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./bias_vs_btobs_650-700.pdf]]
+* 1320-1614 \wn Biases vs BTobs
+Similarly for water band, L1b tuned clear bias dependence on BTobs
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./bias_vs_btobs_1320-1614.pdf]]
+* Longwave Bias Standard Deviations (with Latitude)
+L1c stds often smaller than L1b (tuned or untuned)
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./std_3rta_lw.pdf]]
+* Longwave Bias Stds w/o L1btuning RTA
+Tropopause region much smaller STD for L1c vs L1b (untuned)
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./std_3rta_lw_noL1btuning.pdf]]
+* Longwave Bias Stds w/o L1b(untuned) RTA
+L1b tuning mostly removes higher L1b STD, but strat channels worse
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./std_3rta_lw_nol1b_untuned.pdf]]
+* Midwave Bias Stds: All RTAs
+- Very clear: L1c RTA channel-to-channel STDs very similar
+- L1b tuned STDs far higher than L1c, L1b untuned even lower
+#+ATTR_LATEX: :width 0.65\linewidth
+[[./std_3rta_mw.pdf]]
+* Midwave Bias Stds w/o L1btuning RTA
+Direct comparison L1c RTA versus L1b untuned RTA: HITRAN worse?
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./std_3rta_mw_noL1btuning.pdf]]
+* Midwave Bias Stds w/o L1b(untuned) RTA
+Direct comparison L1c RTA to L1b Tuned RTA: Tuning not catching scene variability?
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./std_3rta_mw_nol1b untuned.pdf]]
+* 1320-1614 \wn Bias Stds versus BTobs
+Scene dependence of STD, clear increase for cold scenes for L1b Tuned RTA
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./std_vs_btobs_1320-1614.pdf]]
+* COMMENT Bias L1btuned RTA and Level 2 BT Tuning
+#+ATTR_LATEX: :width 0.75\linewidth
+[[./bias_jplrta_and_same_plus_tuning.pdf]]
+* Final Effect: L1btuning RTA + Level 2 BT Tuning
+- V6 Level 2 retrieval uses tuned RTA *BUT*
+- It also does BT tuning.   
+- Except in longwave, they cancel each other out!  NOT GOOD.
+#+ATTR_LATEX: :width 0.65\linewidth
+[[./l1b_bttuning_l1b_tunedbias_added.pdf]]
