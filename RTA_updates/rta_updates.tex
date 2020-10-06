@@ -29,17 +29,52 @@
 
 \maketitle
 
+% -----------------------------------------------------
 \begin{frame}{Summary}
 \begin{itemize}
-  \item The Stand-alone radiative transfer algorithm (SARTA)
+  \item What is the Stand-alone radiative transfer algorithm (SARTA)
+  \item Who uses SARTA.
+  \item Current SARTA build status.
+  \item Plans.
     
 \end{itemize}
 
 \end{frame}
 % -----------------------------------------------------
-\begin{frame}{The SARTA collection}
+\begin{frame}{The SARTA}
+
+  \begin{itemize}
+  \item The Stand-alone radiative transfer algorithm (SARTA) is constructed using kCARTA
+  \item Therefore SARTA has the same spectroscopy as kCARTA.
+  \item SARTA was developed 18 years ago for the AIRS.
+  \item It uses sets of coefficients that parameterize atmospheric transmittances derived using a set of training profiles.
+  \item Is written in Fortran
+  \item Permits very fast computation of radiances for predefined spectral response functions.
+    \item Has a version for clear sky radiance calculations and for cloudy radiances.
+    
+\end{itemize}
 
 \end{frame}
 % ----------------------------------------------------
+\begin{frame}{Who uses SARTA}
+
+  \begin{itemize}
+  \item SARTA is used to compute clear and all-sky radiances for any and all FoVs from AIRS, CrIS and IASI missions.
+  \item Is fast enough to make whole-mission modelling easily manageable.
+  \item Currently used in ASL for the RTP production for analysis of sensor performance and global studies and geophysical retireval.
+  \item Is used in the AIRS geophysical product retrieval.
+    \item Is used in NUCAPS.
+
+  \end{itemize}
+\end{frame}
+% ----------------------------------------------------
+\begin{frame}
+
+  \begin{itemize}
+  \item One
+
+  \end{itemize}
+\end{frame}
+% ---------------------------------------------------
 
 \end{document}
