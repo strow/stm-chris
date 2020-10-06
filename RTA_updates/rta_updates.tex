@@ -60,7 +60,7 @@
 
   \begin{itemize}
   \item SARTA is used to compute clear and all-sky radiances for any and all FoVs from AIRS, CrIS and IASI missions.
-  \item Is fast enough to make whole-mission modelling easily manageable.
+  \item Is fast enough to make whole-mission modelling easily manageable. Faster than kCARTA *way* faster than LBL.
   \item Currently used in ASL for the RTP production for analysis of sensor performance and global studies and geophysical retireval.
   \item Is used in the AIRS geophysical product retrieval.
     \item Is used in NUCAPS.
@@ -68,13 +68,73 @@
   \end{itemize}
 \end{frame}
 % ----------------------------------------------------
-\begin{frame}
+\begin{frame}{Current Spectroscopy}
 
   \begin{itemize}
-  \item One
+  \item HITRAN 2016
+  \item CO2, CH4 line mixing from LBLRTM12.8
+  \item MT CKD3.2
+  \item CO2 CIA from WV and N2 by Hartmann (4.3 um)
+  \item Single parameter surface emissivity.
+    
 
   \end{itemize}
 \end{frame}
 % ---------------------------------------------------
+\begin{frame}{Possible Future Improvements}
 
+  \begin{itemize}
+  \item HITRAN 2020,
+  \item Line Mixing package from the HITRAN folks (Iouli Gordon)
+  \item Currently use kCARTA at 0.0025 cm-1, can update to 0.0005 cm-1 in 15 um region
+  \item poss. linear-in-tau RT.
+  \item poss. Nalli surface emissivity parameterization.
+    \item poss. look into running off NLTE from Manuel esp. the extreme solar angles
+      
+  \end{itemize}
+\end{frame}
+
+% -------------------------------------------------
+\begin{frame}{Current SARTAs at ASL}
+
+  \begin{itemize}
+  \item The following SARTAs are in use at ASL:
+    \begin{itemize}
+    \item AIRS vL1B (2008) as supplied to JPL.
+    \item AIRS vL1C (2016).
+    \item CrIS NSR v2008, \& v2016.
+    \item CrIS FSR v2016
+    \item IASI v2008 and v2016.
+    \item CHIRP v2016 (under test).
+    \end{itemize}
+  \end{itemize}
+  
+
+\end{frame}
+% ------------------------------------------------
+\begin{frame}{Validating by bias and residual}
+
+  \begin{itemize}
+  \item After completing the fast coefficient regression, top-of-atmosphere (TOA) radiances predicted by SARTA are compared to those from kCARTA from the training set or extended profile set.
+  \end{itemize}
+      \begin{center}
+    \includegraphics[width=0.6\linewidth]{./Figs/chirp_49regr_sar_kc_bias_stdv.pdf}
+    \captionof{figure}{CHIRP channels. AIRS bias relative to SNPP from global statistics. Showing AIRS module bands.}
+  \end{center}
+  
+
+\end{frame}
+% -----------------------------------------------
+\begin{frame}{Example of optimization}
+
+\begin{block}{}
+  \begin{center}
+    \includegraphics[width=0.6\linewidth]{./Figs/chirp_optimize1.png}
+    \captionof{figure}{CHIRP SARTA bias compared to kCARTA, with and without improved regression.}
+  \end{center}
+\end{block}
+
+
+\end{frame}
+% -----------------------------------------------
 \end{document}
