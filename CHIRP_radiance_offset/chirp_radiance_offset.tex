@@ -22,7 +22,7 @@
 \title{\large CHIRP Radiance Corrections/Offsets Connecting AIRS, SNPP, JPSS-1, and IASI}
 \subtitle{\footnotesize{AIRS Virtual Science Team Meeting}}
 \date{\vspace{0.1in}\footnotesize{October 2020 \vfill}}
-\author{C. L. Hepplewhite\inst{1,2}, L. Larrabee Strow\inst{1,2}, and Howard Motteler\inst{2} }
+\author{C. L. Hepplewhite\inst{2}, L. Larrabee Strow\inst{1,2}, and Howard Motteler\inst{2} }
 \institute[UMBC]{\inst{1} UMBC Physics Dept. \and \inst{2}UMBC JCET}
 \input beamer_setup
 \metroset{titleformat title=allcaps}
@@ -46,19 +46,16 @@
 \begin{frame}{What is CHIRP}
 
   \begin{itemize}
-  \item Climate Hyperspectral InfraRed Product is derived sequentially from
-    multiple similar sensors in low earth orbit to create an on-going radiance
-    record from the start of AIRS to the present.
+  \item Climate Hyperspectral InfraRed Product creates a homogenous radiance
+    record from the start of AIRS through the end of the JPSS CrIS mission. Later versions will include IASI.
   \item CHIRP data are available as level 1 calibrated, geolocated granules.
     (Details are provided in the accompanying presentation and on-line documentation).
   \item Current working version of CHIRP connects AIRS to CrIS from SNPP and JPSS1.
-  \item and has the spectral resolution of CrIS in medium resolution, equivalent to:
-    0.8/0.6/0.4 cm interferometric OPD (LW/MW/SW).
-  \item Of concern in this work is that the radiometric calibration is stable (has
-    a fixed relationship to absolute truth, known to be 'small'), and there is no
-    radiometric change in CHIRP going from one parent (AIRS) to another (CrIS).
+  \item CHIRP spectral resolution of CrIS is equivalent to  0.8/0.6/0.4 cm interferometric OPD (LW/MW/SW).
+  \item CHIRP uses SNPP-CrIS as the radiometric standard.
+  \item Here we present the radiance offsets between SNPP-CRIS and the other two sensors in the CHIRP record: AIRS and JPSS-1 CrIS.
+  \item At this point we assume all instruments are stable in time.    
   \end{itemize}
-  
 
 \end{frame}
 % -----------------------------------------------------
@@ -94,9 +91,10 @@
       \item NPP and J1:IASI1. (Note: SNOs are not available for NPP:J1).
       \end{itemize}
       
-    \item The transition date for parent AIRS to parent CrIS SNPP is 01-Sep-2016.
-    \item The switch to JPSS1 is proposed 01-Sep-2018 to avoid the 2019 SNPP CrIS
-      shutdown.
+    \item The recommended transition date for parent AIRS to parent CrIS SNPP is 01-Sep-2016.
+    \item The switch to JPSS1 is proposed 01-Sep-2018 to avoid the 2019 SNPP CrIS       shutdown.
+    \item BUT: CHIRP will be produced for all of SNPP-CrIS (after switch to hi-res mode) and for all of JPSS1 CrIS
+
 
   \end{itemize}
 \end{frame}
@@ -115,51 +113,68 @@
   \item In the following bias plots the mission overlap period March.2018 to Feb.2019 (incl.) is used.
     
   \end{itemize}
-
 \end{frame}
+
+\begin{frame}[label={sec:org86a7258}]{Data and Methods 3}
+\vspace{-0.2in}
+\begin{columns}
+\begin{column}{0.55\columnwidth}
+\begin{block}{\footnotesize AIRS - SNPP CrIS SNO Locations}
+\begin{center}
+\includegraphics[width=0.95\linewidth]{./Figs/ac_global_delay_map.pdf}
+\end{center}
+\end{block}
+\end{column}
+
+\begin{column}{0.55\columnwidth}
+\begin{block}{\footnotesize AIRS - IASI SNO Locations (like CrIS:IASI)}
+\begin{center}
+\includegraphics[width=0.95\linewidth]{./Figs/ai_global_delay_map.pdf}
+\end{center}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+
 
 % ----------------------------------------------------
-\begin{frame}{Data and Methods 3}
+%%% Chris's version
+% \begin{frame}{Data and Methods 3}
 
-\begin{figure}[!tbp]
-  \centering
-  \begin{minipage}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{./Figs/ac_global_delay_map.pdf}
-    \caption{AIRS:CrIS SNO sample distribution map.}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{./Figs/ai_global_delay_map.pdf}
-    \caption{AIRS:IASI SNO sample distribution map.}
-  \end{minipage}
-\end{figure}
+% \begin{figure}[!tbp]
+%   \centering
+%   \begin{minipage}[b]{0.45\textwidth}
+%     \includegraphics[width=\textwidth]{./Figs/ac_global_delay_map.pdf}
+%     \caption{AIRS:CrIS SNO sample distribution map.}
+%   \end{minipage}
+%   \hfill
+%   \begin{minipage}[b]{0.45\textwidth}
+%     \includegraphics[width=\textwidth]{./Figs/ai_global_delay_map.pdf}
+%     \caption{AIRS:IASI SNO sample distribution map.}
+%   \end{minipage}
+% \end{figure}
+% \end{frame}
 
 
-\end{frame}
-
-% -----------------------------------------------------
-\begin{frame}{Results 1. AIRS:NPP bias and AIRS modules}
+-----------------------------------------------------
+\begin{frame}{Results 1. AIRS:NPP bias versus AIRS modules}
 
 \vspace{-0.1in}
-\begin{block}{}
   \begin{center}
-    \includegraphics[width=0.6\linewidth]{./Figs/2018_ac1_sno_mean_bias_vs_modules.pdf}
-    \captionof{figure}{CHIRP channels. AIRS bias relative to SNPP from global statistics. Showing AIRS module bands.}
-  \end{center}
-\end{block}
-    
-\end{frame}
+    \includegraphics[width=0.7\linewidth]{./Strow/airs_minus_cris_airs_array_colors.pdf}
+    \captionof{figure}{AIRS bias relative to SNPP from global statistics. Colors denote AIRS detector modules.}
+\end{center}
+  \end{frame}
 
 % -----------------------------------------------------
 \begin{frame}{Results 2. AIRS:NPP bias with fill and bad channels}
 
 \vspace{-0.1in}
-\begin{block}{}
   \begin{center}
-    \includegraphics[width=0.6\linewidth]{./Figs/2018_airs_npp_ac1_stats_bias_wbad_fill.pdf}
-    \captionof{figure}{CHIRP channels. AIRS bias relative to SNPP from global statistics. Showing parent bad and fill channels (There are 356 such channels.}
+%    \includegraphics[width=0.6\linewidth]{./Figs/2018_airs_npp_ac1_stats_bias_wbad_fill.pdf}
+   \includegraphics[width=0.7\linewidth]{./Strow/lls_2018_airs_npp_ac1_stats_bias_wbad_fill_v2.pdf}
+    \captionof{figure}{AIRS bias relative to SNPP from global statistics. Showing parent bad or fill channels (total of 356).}
   \end{center}
-\end{block}
     
 \end{frame}
 
@@ -167,25 +182,20 @@
 \begin{frame}{Results 3. AIRS:NPP and AIRS:J1 bias}
 
 \vspace{-0.1in}
-\begin{block}{}
   \begin{center}
-    \includegraphics[width=0.6\linewidth]{./Figs/2018d060_2019d059_ac1_ac2_sno_mean_bias.pdf}
-    \captionof{figure}{CHIRP channels. AIRS bias relative to SNPP and J1 from SNO. One year of data. Double difference can be used for NPP:J1 bias.}
+    \includegraphics[width=0.7\linewidth]{./Figs/2018d060_2019d059_ac1_ac2_sno_mean_bias_v2.pdf}
+    \captionof{figure}{AIRS bias relative to SNPP and J1 from SNO. One year of data. Double difference can be used for NPP:J1 bias.}
   \end{center}
-\end{block}
     
 \end{frame}
 
 % -----------------------------------------------------
 \begin{frame}{Results 4. AIRS:NPP bias From Stats and SNOs}
 
-\vspace{-0.1in}
-\begin{block}{}
   \begin{center}
-    \includegraphics[width=0.6\linewidth]{./Figs/2018d060_2019d059_airs_npp_ac1_bias_stats_sno.pdf}
-    \captionof{figure}{CHIRP channels. AIRS bias relative to SNPP from SNO and global stats. showing very close ~30 mK compliance.}
+    \includegraphics[width=0.65\linewidth]{./Figs/2018d060_2019d059_airs_npp_ac1_bias_stats_sno_v2.pdf}
+    \captionof{figure}{AIRS bias relative to SNPP from SNO and global stats.  Good agreement, $\sim$0.03K.}
   \end{center}
-\end{block}
     
 \end{frame}
 
@@ -193,12 +203,10 @@
 \begin{frame}{Results 5. J1:NPP bias}
 
 \vspace{-0.1in}
-\begin{block}{}
   \begin{center}
-    \includegraphics[width=0.6\linewidth]{./Figs/2018_jn_ic1_ic2_stats_sno_bias.pdf}
+    \includegraphics[width=0.7\linewidth]{./Figs/2018_jn_ic1_ic2_stats_sno_bias_v2.pdf}
     \captionof{figure}{CHIRP channels. CrIS bias from JPSS-1 relative to SNPP from SNO using IASI.1 as cross reference and from global random stats.}
   \end{center}
-\end{block}
     
 \end{frame}
 
@@ -258,3 +266,8 @@
 % \end{center}
 
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
