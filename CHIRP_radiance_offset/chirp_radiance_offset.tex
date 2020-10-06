@@ -14,7 +14,8 @@
 \usetheme{default}
 %
 \usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions
-\usepackage{subcaption}
+\usepackage{subfig}
+%\usepackage{subcaption}
 %
 \author{C. L. Hepplewhite}
 \date{\today}
@@ -119,24 +120,20 @@
 
 % ----------------------------------------------------
 \begin{frame}{Data and Methods 3}
-  
-\begin{figure}
-\centering
-\begin{subfigure}{.5\textwidth}
+
+\begin{figure}[!tbp]
   \centering
-  \includegraphics[width=.4\linewidth]{ac_global_delay_map.pdf}
-  \caption{A subfigure}
-  \label{fig:sub1}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=.4\linewidth]{ai_global_delay_map.pdf}
-  \caption{A subfigure}
-  \label{fig:sub2}
-\end{subfigure}
-\caption{A figure with two subfigures}
-\label{fig:test}
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{./Figs/ac_global_delay_map.pdf}
+    \caption{AIRS:CrIS SNO sample distribution map.}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{./Figs/ai_global_delay_map.pdf}
+    \caption{AIRS:IASI SNO sample distribution map.}
+  \end{minipage}
 \end{figure}
+
 
 \end{frame}
 

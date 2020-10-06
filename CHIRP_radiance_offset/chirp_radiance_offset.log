@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 OCT 2020 08:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 OCT 2020 09:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1158,6 +1158,21 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count161
+\sf@farskip=\skip63
+\sf@captopadj=\dimen198
+\sf@capskip=\skip64
+\sf@nearskip=\skip65
+\c@subfigure=\count162
+\c@subfigure@save=\count163
+\c@depth=\count164
+\c@subtable=\count165
+\c@subtable@save=\count166
+\sf@top=\skip66
+\sf@bottom=\skip67
+)
 (./beamer_setup.tex
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -1551,8 +1566,8 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2014/09/25 3.9l Babel common definitions
-\babel@savecnt=\count161
-\U@D=\dimen198
+\babel@savecnt=\count167
+\U@D=\dimen199
 LaTeX Info: Redefining \textlatin on input line 1431.
 )
 \l@canadian = a dialect from \language\l@american 
@@ -1567,29 +1582,29 @@ Package: pdfpages 2015/05/11 v0.4x Insert pages of external PDF documents (AM)
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count162
-\calc@Bcount=\count163
-\calc@Adimen=\dimen199
-\calc@Bdimen=\dimen200
-\calc@Askip=\skip63
-\calc@Bskip=\skip64
+\calc@Acount=\count168
+\calc@Bcount=\count169
+\calc@Adimen=\dimen200
+\calc@Bdimen=\dimen201
+\calc@Askip=\skip68
+\calc@Bskip=\skip69
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count164
-\calc@Cskip=\skip65
+\calc@Ccount=\count170
+\calc@Cskip=\skip70
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/04/20 v2.0e eso-pic (RN)
 )
-\AM@pagewidth=\dimen201
-\AM@pageheight=\dimen202
+\AM@pagewidth=\dimen202
+\AM@pageheight=\dimen203
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2015/05/11 v0.4x Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box59
 \AM@toc@title=\toks48
-\c@AM@survey=\count165
+\c@AM@survey=\count171
 \AM@templatesizebox=\box60
 )
 (/Users/Hepplewhite/texmf/tex/latex/mtheme/beamerthememetropolis.sty
@@ -1597,7 +1612,7 @@ Package: beamerthememetropolis 2017/01/23 v1.2 Metropolis Beamer theme
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count166
+\etb@tempcnta=\count172
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
@@ -1626,8 +1641,8 @@ File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen203
-\pgf@nodesepend=\dimen204
+\pgf@nodesepstart=\dimen204
+\pgf@nodesepend=\dimen205
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -1640,8 +1655,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen205
-\pgffor@skip=\dimen206
+\pgffor@iter=\dimen206
+\pgffor@skip=\dimen207
 \pgffor@stack=\toks51
 \pgffor@toks=\toks52
 ))
@@ -1652,49 +1667,49 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count167
-\pgfplotmarksize=\dimen207
+\pgf@plot@mark@count=\count173
+\pgfplotmarksize=\dimen208
 )
-\tikz@lastx=\dimen208
-\tikz@lasty=\dimen209
-\tikz@lastxsaved=\dimen210
-\tikz@lastysaved=\dimen211
-\tikzleveldistance=\dimen212
-\tikzsiblingdistance=\dimen213
+\tikz@lastx=\dimen209
+\tikz@lasty=\dimen210
+\tikz@lastxsaved=\dimen211
+\tikz@lastysaved=\dimen212
+\tikzleveldistance=\dimen213
+\tikzsiblingdistance=\dimen214
 \tikz@figbox=\box62
 \tikz@figbox@bg=\box63
 \tikz@tempbox=\box64
 \tikz@tempbox@bg=\box65
-\tikztreelevel=\count168
-\tikznumberofchildren=\count169
-\tikznumberofcurrentchild=\count170
-\tikz@fig@count=\count171
+\tikztreelevel=\count174
+\tikznumberofchildren=\count175
+\tikznumberofcurrentchild=\count176
+\tikz@fig@count=\count177
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count172
-\pgfmatrixcurrentcolumn=\count173
-\pgf@matrix@numberofcolumns=\count174
+\pgfmatrixcurrentrow=\count178
+\pgfmatrixcurrentcolumn=\count179
+\pgf@matrix@numberofcolumns=\count180
 )
-\tikz@expandcount=\count175
+\tikz@expandcount=\count181
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 )))
-\metropolis@titleseparator@linewidth=\skip66
-\metropolis@progressonsectionpage=\skip67
-\metropolis@progressonsectionpage@linewidth=\skip68
-\metropolis@blocksep=\skip69
-\metropolis@blockadjust=\skip70
-\metropolis@parskip=\skip71
+\metropolis@titleseparator@linewidth=\skip71
+\metropolis@progressonsectionpage=\skip72
+\metropolis@progressonsectionpage@linewidth=\skip73
+\metropolis@blocksep=\skip74
+\metropolis@blockadjust=\skip75
+\metropolis@parskip=\skip76
 )
 (/Users/Hepplewhite/texmf/tex/latex/mtheme/beamerouterthememetropolis.sty
 Package: beamerouterthememetropolis 2017/01/23 Metropolis outer theme
-\metropolis@frametitle@padding=\skip72
-\metropolis@progressinheadfoot=\skip73
-\metropolis@progressinheadfoot@linewidth=\skip74
+\metropolis@frametitle@padding=\skip77
+\metropolis@progressinheadfoot=\skip78
+\metropolis@progressinheadfoot@linewidth=\skip79
 )
 (/Users/Hepplewhite/texmf/tex/latex/mtheme/beamercolorthememetropolis.sty
 Package: beamercolorthememetropolis 2017/01/23 Metropolis color theme
@@ -1709,40 +1724,40 @@ aTeX to use the Fira fonts on input line 95.
 )))
 
 Package beamerthememetropolis Warning: Be aware that titleformat title=allcaps 
-can lead to problems on input line 26.
+can lead to problems on input line 28.
 
 (./chirp_radiance_offset.aux)
 \openout1 = `chirp_radiance_offset.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 30.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for LMR/hlcm/m/n on input line 28.
-LaTeX Font Info:    Try loading font information for LMR+hlcm on input line 28.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for LMR/hlcm/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for LMR+hlcm on input line 30.
 
 
 (/Users/Hepplewhite/.texlive2017/texmf-config/tex/latex/lucidabr/lmrhlcm.fd
 File: lmrhlcm.fd 2005/11/28 v4.3 Lucida New Math Arrows (SPQR/DPC/TUG)
 )
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    ... okay on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1780,16 +1795,16 @@ LaTeX Font Info:    ... okay on input line 28.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count176
-\scratchdimen=\dimen214
+\scratchcounter=\count182
+\scratchdimen=\dimen215
 \scratchbox=\box66
-\nofMPsegments=\count177
-\nofMParguments=\count178
+\nofMPsegments=\count183
+\nofMParguments=\count184
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count179
-\MPscratchDim=\dimen215
-\MPnumerator=\count180
-\makeMPintoPDFobject=\count181
+\MPscratchCnt=\count185
+\MPscratchDim=\dimen216
+\MPnumerator=\count186
+\makeMPintoPDFobject=\count187
 \everyMPtoPDFconversion=\toks54
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1808,7 +1823,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 30.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1816,62 +1831,62 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count182
+\c@section@level=\count188
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
 
 (./chirp_radiance_offset.out) (./chirp_radiance_offset.out)
 \@outlinefile=\write5
 \openout5 = `chirp_radiance_offset.out'.
 
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 28.
+(Font)              `operators' in the math version `normal' on input line 30.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  T1/hlh/m/n --> OT1/cmss/m/n on input line 28.
+(Font)                  T1/hlh/m/n --> OT1/cmss/m/n on input line 30.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 28.
+(Font)              `operators' in the math version `bold' on input line 30.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  T1/hlh/b/n --> OT1/cmss/b/n on input line 28.
+(Font)                  T1/hlh/b/n --> OT1/cmss/b/n on input line 30.
 \symnumbers=\mathgroup8
 \sympureletters=\mathgroup9
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  T1/hlh/m/n --> T1/hlh/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 28.
+(Font)                  T1/hlh/m/n --> T1/hlh/m/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  T1/hlh/b/n --> T1/hls/b/n on input line 28.
+(Font)                  T1/hlh/b/n --> T1/hls/b/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/hlh/b/n --> T1/hls/b/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 28.
+(Font)                  T1/hlh/b/n --> T1/hls/b/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  T1/hls/m/n --> T1/hls/m/n on input line 28.
+(Font)                  T1/hls/m/n --> T1/hls/m/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/hls/b/n --> T1/hls/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 28.
+(Font)                  T1/hls/b/n --> T1/hls/m/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  T1/hlh/m/it --> T1/hls/m/it on input line 28.
+(Font)                  T1/hlh/m/it --> T1/hls/m/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/hlh/b/it --> T1/hls/m/it on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 28.
+(Font)                  T1/hlh/b/it --> T1/hls/m/it on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  T1/hlst/m/n --> T1/hlst/m/n on input line 28.
+(Font)                  T1/hlst/m/n --> T1/hlst/m/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/hlst/b/n --> T1/hlst/m/n on input line 28.
+(Font)                  T1/hlst/b/n --> T1/hlst/m/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/hls/m/n --> T1/hls/b/n on input line 28.
+(Font)                  T1/hls/m/n --> T1/hls/b/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/hls/m/it --> T1/hls/b/it on input line 28.
+(Font)                  T1/hls/m/it --> T1/hls/b/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  T1/hlh/b/n --> T1/hlh/b/n on input line 28.
+(Font)                  T1/hlh/b/n --> T1/hlh/b/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/hls/b/n --> T1/hls/b/n on input line 28.
+(Font)                  T1/hls/b/n --> T1/hls/b/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/hls/m/n --> T1/hls/b/n on input line 28.
+(Font)                  T1/hls/m/n --> T1/hls/b/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/hls/m/it --> T1/hls/b/it on input line 28.
+(Font)                  T1/hls/m/it --> T1/hls/b/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/hlst/m/n --> T1/hlst/b/n on input line 28.
+(Font)                  T1/hlst/m/n --> T1/hlst/b/n on input line 30.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1897,8 +1912,9 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 28.
+LaTeX Info: Redefining \includegraphics on input line 30.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: Incompatible package detected (regarding \caption).
 (caption)             \caption = macro:->\ifx \@captype \@undefined \@latex@err
 or {\noexpand \caption outside figure or table}\@ehd \expandafter \@gobble \els
@@ -1914,118 +1930,118 @@ See the caption package documentation for explanation.
 Package caption Info: End \AtBeginDocument code.
 (./chirp_radiance_offset.nav)
 LaTeX Font Info:    Font shape `T1/hls/m/n' will be
-(Font)              scaled to size 5.19997pt on input line 28.
+(Font)              scaled to size 5.19997pt on input line 30.
 LaTeX Font Info:    Font shape `T1/hls/m/n' will be
-(Font)              scaled to size 6.93004pt on input line 28.
+(Font)              scaled to size 6.93004pt on input line 30.
 LaTeX Font Info:    Font shape `T1/hls/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 30.
+(Font)              scaled to size 13.24796pt on input line 32.
 LaTeX Font Info:    Font shape `T1/hls/b/n' will be
-(Font)              scaled to size 13.24796pt on input line 30.
+(Font)              scaled to size 13.24796pt on input line 32.
 LaTeX Font Info:    Font shape `T1/hls/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 30.
+(Font)              scaled to size 11.15991pt on input line 32.
 LaTeX Font Info:    Font shape `T1/hls/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 30.
+(Font)              scaled to size 11.15991pt on input line 32.
 LaTeX Font Info:    Font shape `T1/hls/m/n' will be
-(Font)              scaled to size 7.76001pt on input line 30.
+(Font)              scaled to size 7.76001pt on input line 32.
 LaTeX Font Info:    Font shape `T1/hls/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 30.
-LaTeX Font Info:    Try loading font information for OML+hlcm on input line 30.
+(Font)              scaled to size 8.64006pt on input line 32.
+LaTeX Font Info:    Try loading font information for OML+hlcm on input line 32.
 
 
 (/Users/Hepplewhite/.texlive2017/texmf-config/tex/latex/lucidabr/omlhlcm.fd
 File: omlhlcm.fd 2005/11/28 v4.3 Lucida New Math Italic (SPQR/DPC/TUG)
 )
 LaTeX Font Info:    Font shape `OML/hlcm/m/it' will be
-(Font)              scaled to size 8.64006pt on input line 30.
+(Font)              scaled to size 8.64006pt on input line 32.
 LaTeX Font Info:    Font shape `OML/hlcm/m/it' will be
-(Font)              scaled to size 6.12003pt on input line 30.
+(Font)              scaled to size 6.12003pt on input line 32.
 LaTeX Font Info:    Font shape `OML/hlcm/m/it' will be
-(Font)              scaled to size 5.19997pt on input line 30.
-LaTeX Font Info:    Try loading font information for OMS+hlcy on input line 30.
+(Font)              scaled to size 5.19997pt on input line 32.
+LaTeX Font Info:    Try loading font information for OMS+hlcy on input line 32.
 
 
 (/Users/Hepplewhite/.texlive2017/texmf-config/tex/latex/lucidabr/omshlcy.fd
 File: omshlcy.fd 2005/11/28 v4.3 Lucida New Math Symbols (SPQR/DPC/TUG)
 )
 LaTeX Font Info:    Font shape `OMS/hlcy/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 30.
+(Font)              scaled to size 8.64006pt on input line 32.
 LaTeX Font Info:    Font shape `OMS/hlcy/m/n' will be
-(Font)              scaled to size 6.12003pt on input line 30.
+(Font)              scaled to size 6.12003pt on input line 32.
 LaTeX Font Info:    Font shape `OMS/hlcy/m/n' will be
-(Font)              scaled to size 5.19997pt on input line 30.
-LaTeX Font Info:    Try loading font information for OMX+hlcv on input line 30.
+(Font)              scaled to size 5.19997pt on input line 32.
+LaTeX Font Info:    Try loading font information for OMX+hlcv on input line 32.
 
 
 (/Users/Hepplewhite/.texlive2017/texmf-config/tex/latex/lucidabr/omxhlcv.fd
 File: omxhlcv.fd 2005/11/28 v4.3 Lucida New Math Extension (SPQR/DPC/TUG)
 )
 LaTeX Font Info:    Font shape `OMX/hlcv/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 30.
+(Font)              scaled to size 8.64006pt on input line 32.
 LaTeX Font Info:    Font shape `OMX/hlcv/m/n' will be
-(Font)              scaled to size 6.12003pt on input line 30.
+(Font)              scaled to size 6.12003pt on input line 32.
 LaTeX Font Info:    Font shape `OMX/hlcv/m/n' will be
-(Font)              scaled to size 5.19997pt on input line 30.
-LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+(Font)              scaled to size 5.19997pt on input line 32.
+LaTeX Font Info:    Try loading font information for U+msa on input line 32.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 30.
+LaTeX Font Info:    Try loading font information for U+msb on input line 32.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OML/hlcm/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 30.
+(Font)              scaled to size 8.64006pt on input line 32.
 LaTeX Font Info:    Font shape `OML/hlcm/m/n' will be
-(Font)              scaled to size 6.12003pt on input line 30.
+(Font)              scaled to size 6.12003pt on input line 32.
 LaTeX Font Info:    Font shape `OML/hlcm/m/n' will be
-(Font)              scaled to size 5.19997pt on input line 30.
+(Font)              scaled to size 5.19997pt on input line 32.
 LaTeX Font Info:    Font shape `LMR/hlcm/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 30.
+(Font)              scaled to size 8.64006pt on input line 32.
 LaTeX Font Info:    Font shape `LMR/hlcm/m/n' will be
-(Font)              scaled to size 6.12003pt on input line 30.
+(Font)              scaled to size 6.12003pt on input line 32.
 LaTeX Font Info:    Font shape `LMR/hlcm/m/n' will be
-(Font)              scaled to size 5.19997pt on input line 30.
+(Font)              scaled to size 5.19997pt on input line 32.
 LaTeX Font Info:    Font shape `T1/hls/m/n' will be
-(Font)              scaled to size 6.12003pt on input line 30.
+(Font)              scaled to size 6.12003pt on input line 32.
 LaTeX Font Info:    Font shape `T1/hls/m/it' will be
-(Font)              scaled to size 8.64006pt on input line 30.
+(Font)              scaled to size 8.64006pt on input line 32.
 LaTeX Font Info:    Font shape `T1/hls/m/it' will be
-(Font)              scaled to size 6.12003pt on input line 30.
+(Font)              scaled to size 6.12003pt on input line 32.
 LaTeX Font Info:    Font shape `T1/hls/m/it' will be
-(Font)              scaled to size 5.19997pt on input line 30.
+(Font)              scaled to size 5.19997pt on input line 32.
 LaTeX Font Info:    Font shape `OML/hlcm/m/it' will be
-(Font)              scaled to size 6.93004pt on input line 30.
+(Font)              scaled to size 6.93004pt on input line 32.
 LaTeX Font Info:    Font shape `OMS/hlcy/m/n' will be
-(Font)              scaled to size 6.93004pt on input line 30.
+(Font)              scaled to size 6.93004pt on input line 32.
 LaTeX Font Info:    Font shape `OMX/hlcv/m/n' will be
-(Font)              scaled to size 6.93004pt on input line 30.
+(Font)              scaled to size 6.93004pt on input line 32.
 LaTeX Font Info:    Font shape `OML/hlcm/m/n' will be
-(Font)              scaled to size 6.93004pt on input line 30.
+(Font)              scaled to size 6.93004pt on input line 32.
 LaTeX Font Info:    Font shape `LMR/hlcm/m/n' will be
-(Font)              scaled to size 6.93004pt on input line 30.
+(Font)              scaled to size 6.93004pt on input line 32.
 LaTeX Font Info:    Font shape `T1/hls/m/it' will be
-(Font)              scaled to size 6.93004pt on input line 30.
+(Font)              scaled to size 6.93004pt on input line 32.
 
-Overfull \vbox (19.49039pt too high) detected at line 30
+Overfull \vbox (19.49039pt too high) detected at line 32
  []
 
 [1
 
 {/Users/Hepplewhite/.texlive2017/texmf-config/fonts/map/pdftex/updmap/pdftex.ma
 p}]
-LaTeX Font Info:    Try loading font information for OMS+hls on input line 42.
-LaTeX Font Info:    No file OMShls.fd. on input line 42.
+LaTeX Font Info:    Try loading font information for OMS+hls on input line 44.
+LaTeX Font Info:    No file OMShls.fd. on input line 44.
 LaTeX Font Warning: Font shape `OMS/hls/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 42.
+(Font)              for symbol `textbullet' on input line 44.
 LaTeX Font Info:    Font shape `T1/hls/m/n' will be
-(Font)              scaled to size 4.15997pt on input line 42.
+(Font)              scaled to size 4.15997pt on input line 44.
  [2
 
 ]
-Overfull \vbox (6.97017pt too high) detected at line 61
+Overfull \vbox (6.97017pt too high) detected at line 63
  []
 
 [3
@@ -2037,93 +2053,111 @@ Overfull \vbox (6.97017pt too high) detected at line 61
 ] [6
 
 ]
-LaTeX Font Info:    Font shape `T1/hls/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 130.
+<./Figs/ac_global_delay_map.pdf, id=51, 459.7175pt x 368.37625pt>
+File: ./Figs/ac_global_delay_map.pdf Graphic file (type pdf)
 
-<./Figs/2018_ac1_sno_mean_bias_vs_modules.pdf, id=51, 501.875pt x 395.4775pt>
+<use ./Figs/ac_global_delay_map.pdf>
+Package pdftex.def Info: ./Figs/ac_global_delay_map.pdf used on input line 138.
+
+(pdftex.def)             Requested size: 138.2795pt x 110.806pt.
+LaTeX Font Info:    Font shape `T1/hls/b/n' will be
+(Font)              scaled to size 8.64006pt on input line 138.
+
+<./Figs/ai_global_delay_map.pdf, id=52, 505.89pt x 399.4925pt>
+File: ./Figs/ai_global_delay_map.pdf Graphic file (type pdf)
+
+<use ./Figs/ai_global_delay_map.pdf>
+Package pdftex.def Info: ./Figs/ai_global_delay_map.pdf used on input line 138.
+
+(pdftex.def)             Requested size: 138.2795pt x 109.19939pt.
+ [7
+
+ <./Figs/ac_global_delay_map.pdf> <./Figs/ai_global_delay_map.pdf>]
+LaTeX Font Info:    Font shape `T1/hls/b/n' will be
+(Font)              scaled to size 9.49997pt on input line 151.
+
+<./Figs/2018_ac1_sno_mean_bias_vs_modules.pdf, id=73, 501.875pt x 395.4775pt>
 File: ./Figs/2018_ac1_sno_mean_bias_vs_modules.pdf Graphic file (type pdf)
 
 <use ./Figs/2018_ac1_sno_mean_bias_vs_modules.pdf>
 Package pdftex.def Info: ./Figs/2018_ac1_sno_mean_bias_vs_modules.pdf used on i
-nput line 130.
+nput line 151.
 (pdftex.def)             Requested size: 184.3758pt x 145.28644pt.
-LaTeX Font Info:    Font shape `T1/hls/b/n' will be
-(Font)              scaled to size 8.64006pt on input line 130.
 
-Overfull \vbox (15.00542pt too high) detected at line 130
+Overfull \vbox (15.00542pt too high) detected at line 151
  []
 
-[7
+[8
 
  <./Figs/2018_ac1_sno_mean_bias_vs_modules.pdf>]
-<./Figs/2018_airs_npp_ac1_stats_bias_wbad_fill.pdf, id=63, 501.875pt x 389.455p
+<./Figs/2018_airs_npp_ac1_stats_bias_wbad_fill.pdf, id=84, 501.875pt x 389.455p
 t>
 File: ./Figs/2018_airs_npp_ac1_stats_bias_wbad_fill.pdf Graphic file (type pdf)
 
  <use ./Figs/2018_airs_npp_ac1_stats_bias_wbad_fill.pdf>
 Package pdftex.def Info: ./Figs/2018_airs_npp_ac1_stats_bias_wbad_fill.pdf used
- on input line 143.
+ on input line 164.
 (pdftex.def)             Requested size: 184.3758pt x 143.07396pt.
 
-Overfull \vbox (23.77534pt too high) detected at line 143
+Overfull \vbox (23.77534pt too high) detected at line 164
  []
 
-[8
+[9
 
  <./Figs/2018_airs_npp_ac1_stats_bias_wbad_fill.pdf>]
-<./Figs/2018d060_2019d059_ac1_ac2_sno_mean_bias.pdf, id=74, 506.89375pt x 389.4
+<./Figs/2018d060_2019d059_ac1_ac2_sno_mean_bias.pdf, id=95, 506.89375pt x 389.4
 55pt>
 File: ./Figs/2018d060_2019d059_ac1_ac2_sno_mean_bias.pdf Graphic file (type pdf
 )
  <use ./Figs/2018d060_2019d059_ac1_ac2_sno_mean_bias.pdf>
 Package pdftex.def Info: ./Figs/2018d060_2019d059_ac1_ac2_sno_mean_bias.pdf use
-d on input line 156.
+d on input line 177.
 (pdftex.def)             Requested size: 184.3758pt x 141.65367pt.
 
-Overfull \vbox (11.26033pt too high) detected at line 156
- []
-
-[9
-
- <./Figs/2018d060_2019d059_ac1_ac2_sno_mean_bias.pdf>]
-<./Figs/2018d060_2019d059_airs_npp_ac1_bias_stats_sno.pdf, id=85, 506.89375pt x
- 393.47pt>
-File: ./Figs/2018d060_2019d059_airs_npp_ac1_bias_stats_sno.pdf Graphic file (ty
-pe pdf)
- <use ./Figs/2018d060_2019d059_airs_npp_ac1_bias_stats_sno.pdf>
-Package pdftex.def Info: ./Figs/2018d060_2019d059_airs_npp_ac1_bias_stats_sno.p
-df used on input line 169.
-(pdftex.def)             Requested size: 184.3758pt x 143.11403pt.
-
-Overfull \vbox (12.83301pt too high) detected at line 169
+Overfull \vbox (11.26033pt too high) detected at line 177
  []
 
 [10
 
- <./Figs/2018d060_2019d059_airs_npp_ac1_bias_stats_sno.pdf>]
-<./Figs/2018_jn_ic1_ic2_stats_sno_bias.pdf, id=96, 506.89375pt x 400.49625pt>
-File: ./Figs/2018_jn_ic1_ic2_stats_sno_bias.pdf Graphic file (type pdf)
+ <./Figs/2018d060_2019d059_ac1_ac2_sno_mean_bias.pdf>]
+<./Figs/2018d060_2019d059_airs_npp_ac1_bias_stats_sno.pdf, id=106, 506.89375pt 
+x 393.47pt>
+File: ./Figs/2018d060_2019d059_airs_npp_ac1_bias_stats_sno.pdf Graphic file (ty
+pe pdf)
+ <use ./Figs/2018d060_2019d059_airs_npp_ac1_bias_stats_sno.pdf>
+Package pdftex.def Info: ./Figs/2018d060_2019d059_airs_npp_ac1_bias_stats_sno.p
+df used on input line 190.
+(pdftex.def)             Requested size: 184.3758pt x 143.11403pt.
 
-<use ./Figs/2018_jn_ic1_ic2_stats_sno_bias.pdf>
-Package pdftex.def Info: ./Figs/2018_jn_ic1_ic2_stats_sno_bias.pdf used on inpu
-t line 182.
-(pdftex.def)             Requested size: 184.3758pt x 145.66963pt.
-
-Overfull \vbox (15.38861pt too high) detected at line 182
+Overfull \vbox (12.83301pt too high) detected at line 190
  []
 
 [11
 
- <./Figs/2018_jn_ic1_ic2_stats_sno_bias.pdf>]
-<./Figs/plot1.png, id=107, 564.1075pt x 426.59375pt>
-File: ./Figs/plot1.png Graphic file (type png)
- <use ./Figs/plot1.png>
-Package pdftex.def Info: ./Figs/plot1.png used on input line 193.
-(pdftex.def)             Requested size: 184.3758pt x 139.42894pt.
+ <./Figs/2018d060_2019d059_airs_npp_ac1_bias_stats_sno.pdf>]
+<./Figs/2018_jn_ic1_ic2_stats_sno_bias.pdf, id=117, 506.89375pt x 400.49625pt>
+File: ./Figs/2018_jn_ic1_ic2_stats_sno_bias.pdf Graphic file (type pdf)
+
+<use ./Figs/2018_jn_ic1_ic2_stats_sno_bias.pdf>
+Package pdftex.def Info: ./Figs/2018_jn_ic1_ic2_stats_sno_bias.pdf used on inpu
+t line 203.
+(pdftex.def)             Requested size: 184.3758pt x 145.66963pt.
+
+Overfull \vbox (15.38861pt too high) detected at line 203
+ []
 
 [12
 
- <./Figs/plot1.png>] [13
+ <./Figs/2018_jn_ic1_ic2_stats_sno_bias.pdf>]
+<./Figs/plot1.png, id=128, 564.1075pt x 426.59375pt>
+File: ./Figs/plot1.png Graphic file (type png)
+ <use ./Figs/plot1.png>
+Package pdftex.def Info: ./Figs/plot1.png used on input line 214.
+(pdftex.def)             Requested size: 184.3758pt x 139.42894pt.
+
+[13
+
+ <./Figs/plot1.png>] [14
 
 ]
 \tf@nav=\write6
@@ -2135,34 +2169,34 @@ Package pdftex.def Info: ./Figs/plot1.png used on input line 193.
 \tf@snm=\write8
 \openout8 = `chirp_radiance_offset.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 239.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 239.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
  (./chirp_radiance_offset.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 239.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 239.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
 Package rerunfilecheck Info: File `chirp_radiance_offset.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 239.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
  ) 
 Here is how much of TeX's memory you used:
- 23612 strings out of 493089
- 461465 string characters out of 6134842
- 524757 words of memory out of 5000000
- 26487 multiletter control sequences out of 15000+600000
+ 23765 strings out of 493089
+ 464050 string characters out of 6134842
+ 528872 words of memory out of 5000000
+ 26634 multiletter control sequences out of 15000+600000
  27325 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,13n,88p,1772b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,13n,88p,1772b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></Users/Hepplewh
 ite/.texlive2017/texmf-config/fonts/type1/bh/lucida/lbmo.pfb></Users/Hepplewhit
 e/.texlive2017/texmf-config/fonts/type1/bh/lucida/lsd.pfb></Users/Hepplewhite/.
 texlive2017/texmf-config/fonts/type1/bh/lucida/lsr.pfb>
-Output written on chirp_radiance_offset.pdf (13 pages, 405172 bytes).
+Output written on chirp_radiance_offset.pdf (14 pages, 841785 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 79 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 169 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
