@@ -14,6 +14,7 @@
 \usetheme{default}
 %
 \usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions
+\usepackage{subcaption}
 %
 \author{C. L. Hepplewhite}
 \date{\today}
@@ -113,6 +114,29 @@
   \item In the following bias plots the mission overlap period March.2018 to Feb.2019 (incl.) is used.
     
   \end{itemize}
+
+\end{frame}
+
+% ----------------------------------------------------
+\begin{frame}{Data and Methods 3}
+  
+\begin{figure}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{ac_global_delay_map.pdf}
+  \caption{A subfigure}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{ai_global_delay_map.pdf}
+  \caption{A subfigure}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{A figure with two subfigures}
+\label{fig:test}
+\end{figure}
 
 \end{frame}
 

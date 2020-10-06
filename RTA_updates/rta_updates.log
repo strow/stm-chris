@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 OCT 2020 14:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 OCT 2020 08:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1711,7 +1711,7 @@ aTeX to use the Fira fonts on input line 95.
 Package beamerthememetropolis Warning: Be aware that titleformat title=allcaps 
 can lead to problems on input line 26.
 
-No file rta_updates.aux.
+(./rta_updates.aux)
 \openout1 = `rta_updates.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -1730,6 +1730,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 28.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -1820,6 +1821,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 28.
 LaTeX Info: Redefining \pageref on input line 28.
 LaTeX Info: Redefining \nameref on input line 28.
+
+(./rta_updates.out) (./rta_updates.out)
 \@outlinefile=\write5
 \openout5 = `rta_updates.out'.
 
@@ -1909,7 +1912,7 @@ Package caption Warning: \caption will not be redefined since it's already
 See the caption package documentation for explanation.
 
 Package caption Info: End \AtBeginDocument code.
-No file rta_updates.nav.
+(./rta_updates.nav)
 LaTeX Font Info:    Font shape `T1/hls/m/n' will be
 (Font)              scaled to size 5.19997pt on input line 28.
 LaTeX Font Info:    Font shape `T1/hls/m/n' will be
@@ -1927,6 +1930,7 @@ LaTeX Font Info:    Font shape `T1/hls/m/n' will be
 LaTeX Font Info:    Font shape `T1/hls/m/n' will be
 (Font)              scaled to size 8.64006pt on input line 30.
 LaTeX Font Info:    Try loading font information for OML+hlcm on input line 30.
+
 
 (/Users/Hepplewhite/.texlive2017/texmf-config/tex/latex/lucidabr/omlhlcm.fd
 File: omlhlcm.fd 2005/11/28 v4.3 Lucida New Math Italic (SPQR/DPC/TUG)
@@ -2011,16 +2015,20 @@ Overfull \vbox (19.49039pt too high) detected at line 30
 
 {/Users/Hepplewhite/.texlive2017/texmf-config/fonts/map/pdftex/updmap/pdftex.ma
 p}]
-LaTeX Font Info:    Try loading font information for OMS+hls on input line 38.
-LaTeX Font Info:    No file OMShls.fd. on input line 38.
+LaTeX Font Info:    Try loading font information for OMS+hls on input line 42.
+LaTeX Font Info:    No file OMShls.fd. on input line 42.
 LaTeX Font Warning: Font shape `OMS/hls/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 38.
+(Font)              for symbol `textbullet' on input line 42.
 LaTeX Font Info:    Font shape `T1/hls/m/n' will be
-(Font)              scaled to size 4.15997pt on input line 38.
+(Font)              scaled to size 4.15997pt on input line 42.
  [2
 
 ] [3
+
+] [4
+
+] [5
 
 ]
 \tf@nav=\write6
@@ -2032,28 +2040,21 @@ LaTeX Font Info:    Font shape `T1/hls/m/n' will be
 \tf@snm=\write8
 \openout8 = `rta_updates.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./rta_updates.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
-
-
-Package rerunfilecheck Warning: File `rta_updates.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `rta_updates.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
+Package rerunfilecheck Info: File `rta_updates.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 23457 strings out of 493089
- 457835 string characters out of 6134842
- 521368 words of memory out of 5000000
- 26362 multiletter control sequences out of 15000+600000
+ 23480 strings out of 493089
+ 458076 string characters out of 6134842
+ 523547 words of memory out of 5000000
+ 26373 multiletter control sequences out of 15000+600000
  25873 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,13n,83p,1762b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2062,10 +2063,10 @@ exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/Hepple
 white/.texlive2017/texmf-config/fonts/type1/bh/lucida/lbmo.pfb></Users/Hepplewh
 ite/.texlive2017/texmf-config/fonts/type1/bh/lucida/lsd.pfb></Users/Hepplewhite
 /.texlive2017/texmf-config/fonts/type1/bh/lucida/lsr.pfb>
-Output written on rta_updates.pdf (3 pages, 25834 bytes).
+Output written on rta_updates.pdf (5 pages, 28849 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
+ 64 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
