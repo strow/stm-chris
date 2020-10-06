@@ -71,8 +71,7 @@
     standard black body - instead must use data available during the missions.
   \item Fortunately there is a lot of mission overlap between AIRS, CrIS and IASI
     (more details to follow).
-  \item In the first version of CHIRP the radiometric offset is a single valued vector
-    representing the difference for each channel of the CHIRP spectral grid.
+  \item CHIRP V1 derived from AIRS or J1-CrIS have BT bias offsets applied to convert them to the NPP-CrIS radiometric calibration.
 
   \end{itemize}
 
@@ -111,6 +110,7 @@
     \item IASI:CrIS SNOs are restricted to a very narrow latitude band near 70-deg.
     \end{itemize}
   \item both SNOs and random samples can be used for trending and for scene dependencies.
+  \item In the following bias plots the mission overlap period March.2018 to Feb.2019 (incl.) is used.
     
   \end{itemize}
 
@@ -193,16 +193,15 @@
 \end{frame}
 
 % -----------------------------------------------------
-\begin{frame}{Results 7. Sample of bias stability.}
-
-  \begin{center}
-    \includegraphics[width=0.6\linewidth]{./Figs/plot6.png}
-    \captionof{figure}{CHIRP short wave channels. Bias variation from AIRS:CrIS SNOs. Note residual variation mostly from AIRS solar beta- dependent variation, and 2013 jump to be investigate further.}
-  \end{center}
-  
-  
-\end{frame}
-
+%\begin{frame}{Results 7. Sample of bias stability.}
+%
+%  \begin{center}
+%    \includegraphics[width=0.6\linewidth]{./Figs/plot6.png}
+%    \captionof{figure}{CHIRP short wave channels. Bias variation from AIRS:CrIS SNOs. Note %residual variation mostly from AIRS solar beta- dependent variation, and 2013 jump to be %investigate further.}
+%  \end{center}
+%    
+%\end{frame}
+%
 % -----------------------------------------------------
 \begin{frame}{Summary, Conclusions and Future Work}
 
