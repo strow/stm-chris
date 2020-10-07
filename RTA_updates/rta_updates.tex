@@ -81,15 +81,16 @@
   \end{itemize}
 \end{frame}
 % ---------------------------------------------------
-\begin{frame}{Possible Future Improvements}
+\begin{frame}{Future Improvements}
 
   \begin{itemize}
-  \item HITRAN 2020,
-  \item Line Mixing package from the HITRAN folks (Iouli Gordon)
+  \item HITRAN 2020.
+  \item Line Mixing package from the HITRAN folks (Iouli Gordon).
   \item Currently use kCARTA at 0.0025 cm-1, can update to 0.0005 cm-1 in 15 um region
   \item poss. linear-in-tau RT.
   \item poss. Nalli surface emissivity parameterization.
-    \item poss. look into running off NLTE from Manuel esp. the extreme solar angles
+  \item poss. look into running off NLTE from Manuel esp. the extreme solar angles.
+  \item Tuning for 'real world' application.
       
   \end{itemize}
 \end{frame}
@@ -100,12 +101,12 @@
   \begin{itemize}
   \item The following SARTAs are in use at ASL:
     \begin{itemize}
-    \item AIRS vL1B (2008) as supplied to JPL.
-    \item AIRS vL1C (2016).
+    \item AIRS vL1B (2008) as supplied to JPL is tuned.
+    \item AIRS vL1C (2016) as supplied untuned.
     \item CrIS NSR v2008, \& v2016.
-    \item CrIS FSR v2016
-    \item IASI v2008 and v2016.
-    \item CHIRP v2016 (under test).
+    \item CrIS FSR v2016 (untuned).
+    \item IASI v2008 and v2016 (untuned).
+    \item CHIRP v2016 (under development).
     \end{itemize}
   \end{itemize}
   
@@ -125,16 +126,96 @@
 
 \end{frame}
 % -----------------------------------------------
-\begin{frame}{Example of optimization}
+\begin{frame}{Improved bias \& std.dev relative to kCARTA}
 
-\begin{block}{}
+  \begin{itemize}
+  \item kCARTA monochromatic layer-so-space optical depths are convolved to the sensor grid.
+  \item For AIRS (and any spectrometer) convolution with the spectral response functions (SRF) is well behaved. Transmittance approaches zero for opaque channels.
+  \item For interferometers (IASI, CrIS, CHIRP) convolution with the instrument line shape (ILS) produces tau that goes -ve and +ve into the opaque region.
+  \item Regression of the fast coefficients is controlled down to a minimum transmittance which is set by inspection of these 'wings'.
+  \item Sarta builds for IASI, CrIS version 2019 and CHIRP 2020 included some fits in strong (CO2) bands that were not optimal. (See next slides).
+  \end{itemize}
+
+\end{frame}
+
+% -----------------------------------------------
+\begin{frame}{Example of optimization: CHIRP 640 cm-1}
+
   \begin{center}
     \includegraphics[width=0.6\linewidth]{./Figs/chirp_optimize1.png}
     \captionof{figure}{CHIRP SARTA bias compared to kCARTA, with and without improved regression.}
   \end{center}
-\end{block}
 
 
 \end{frame}
 % -----------------------------------------------
+\begin{frame}{Example of optimization: IASI 4.3 um}
+
+\vspace{-0.5cm}
+  \begin{center}
+    \includegraphics[width=0.6\linewidth]{./Figs/iasi_sarta_kcarta_mean_bias_4p3um_fx.png}
+    \captionof{figure}{IASI SARTA bias compared to kCARTA, with and without improved regression at 4.3 um.}
+  \end{center}
+
+\end{frame}
+% -----------------------------------------------
+\begin{frame}{Tuning: 1}
+
+  \begin{block}{}
+    In the real world differences in measured top-of-atmosphere radiances compared to calculated have several potential sources:
+  \end{block}
+    
+  \begin{itemize}
+  \item AIRS radiometric calibration.
+  \item AIRS spectral calibration and instrument line shape.
+  \item AIRS fast model parameterization.
+  \item cloud contamination in fields of view selected as clear.
+  \item validation data, including time/space mismatches and uncertainties in minor gas abundances.
+    \item spectroscopy used in the AIRS RTA.
+
+  \end{itemize}
+
+\end{frame}
+% -----------------------------------------------
+\begin{frame}{Tuning: 2}
+
+  \begin{block}{}
+    The objective of tuning is to reduce bias in the real world sufficiently to increase the yield in single footprint geophysical retrievals.
+  \end{block}
+
+  \begin{itemize}
+  \item Large data sets are compared covering all global atmospheric and scene types.
+  \item Bias and std.dev characterisctics between coincident TOA measurements with forward model predictions are determined.
+  \item RTA transmittances are adjusted for specific channels where needed.
+  \item SARTA uses a supporting data file of tuning parameters.
+  \item Tuning of transmittances in the RTA are preferred over tuning BT of TOA predicts.
+
+  \end{itemize}
+
+\end{frame}
+% ----------------------------------------------
+\begin{frame}{Tuning: Case study}
+
+  \begin{block}{}
+  \end{block}
+
+  \begin{itemize}
+  \item Selection of June 25 talk
+  \end{itemize}
+
+\end{frame}
+% ----------------------------------------------
+\begin{frame}{Conclusions}
+
+  \begin{block}{}
+  \end{block}
+
+  \begin{itemize}
+  \item TBD
+  \end{itemize}
+
+\end{frame}
+% -----------------------------------------------
+
+
 \end{document}
