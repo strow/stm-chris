@@ -1,0 +1,8 @@
+# LaTeX aux files
+
+*.aux
+*.out
+*.log
+*.nav
+*.snm
+*.gz
