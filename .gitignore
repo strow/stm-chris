@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-*.aux
-*.log
-*.nav
-*.synctex.gz
-=======
 # LaTeX aux files
 
 *.aux
@@ -12,4 +6,3 @@
 *.nav
 *.snm
 *.gz
->>>>>>> refs/remotes/origin/master

@@ -31,12 +31,12 @@
 
 % -----------------------------------------------------
 \begin{frame}{Introduction}
-\begin{itemize}
+  \begin{itemize}
   \item Current and upcoming set of SARTA builds 
   \item Possible future improvements 
   \item Minor fitting improvements
   \item RTA/HITRAN intercomparisons and tuning issues
-\end{itemize}
+  \end{itemize}
 
 \end{frame}
 % ----------------------------------------------------
@@ -47,9 +47,9 @@
   \item MT CKD3.2
   \item CO2 CIA from WV and N2 by Hartmann (4.3 um)
   \item Single parameter surface emissivity.
+  \item Used in IASI, AIRS L1c, and CHIRP RTAs.
+    
   \end{itemize}
-
-Used in IASI, AIRS L1c, and CHIRP RTAs.
 
 \end{frame}
 % -------------------------------------------------
@@ -67,14 +67,12 @@ Used in IASI, AIRS L1c, and CHIRP RTAs.
     \item CHIRP v2020
     \end{itemize}
   \end{itemize}
+
 \end{frame}
 % ---------------------------------------------------
 \begin{frame}{Future Improvements/Activities}
 
   \begin{itemize}
-<<<<<<< HEAD
-  \item Fast coefficients are checked by comparing top-of-atmosphere (TOA) radiances predicted by SARTA and kCARTA.
-=======
   \item HITRAN 2020, should be out this year.
   \item Line Mixing package from the HITRAN (Iouli Gordon, Harvard-Smithsonia).
   \item Currently use kCARTA at 0.0025 cm-1 steps, can move to 0.0005 cm-1 step in 15 \um m region
@@ -83,29 +81,22 @@ Used in IASI, AIRS L1c, and CHIRP RTAs.
   \item Improved non-LTE, the extreme solar angles.  Not yet started.
   \item RTA tuning in collabortion with Chris Barnet and Bill Irion (more later in talk)
   \item Hope to perform major re-validation on new RTAs using HITRAN 2020, probably last time...
->>>>>>> origin/master
   \end{itemize}
 \end{frame}
 
 % ------------------------------------------------
 \begin{frame}[shrink=5]{Validation: Fitting Accuracy}
 
-Here concentrate just on fitting accuracy.  Future work on independent validation using re-analysis, sondes, etc.
+%Here concentrate just on fitting accuracy.  Future work on independent validation using re-analysis, sondes, etc.
 
-  % \begin{itemize}
-  % \item After completing the fast coefficient regression, top-of-atmosphere (TOA) radiances predicted by SARTA are compared to those from kCARTA from the training set or extended profile set.
-  % \end{itemize}
-      \begin{center}
-<<<<<<< HEAD
+\begin{itemize}
+    \item Fast coefficients are checked by comparing top-of-atmosphere (TOA) radiances predicted by SARTA and kCARTA.
+   \end{itemize}
+    \begin{center}
     \includegraphics[width=0.6\linewidth]{./Figs/kc_sar_airs_l1c_mean_bias_stdv_sea_6angs_aslp.png}
     \captionof{figure}{AIRS bias relative to kCARTA.}
-=======
-    \includegraphics[width=0.6\linewidth]{./Figs/chirp_49regr_sar_kc_bias_stdv.pdf}
-    \captionof{figure}{CHIRP bias and std for 49 fitting profiles, 7 secant angles.}
->>>>>>> origin/master
   \end{center}
   
-
 \end{frame}
 % -----------------------------------------------
 %\begin{frame}[shrink=10]{Improved bias \& std.dev relative to kCARTA}
@@ -132,7 +123,7 @@ Here concentrate just on fitting accuracy.  Future work on independent validatio
 
 \end{frame}
 % -----------------------------------------------
-\begin{frame}[shrink=5]{Example of optimization: IASI 2300 cm^{-1}}
+\begin{frame}[shrink=5]{Example of optimization: IASI $2300 cm^{-1}$}
 
 \vspace{-0.5cm}
   \begin{center}
