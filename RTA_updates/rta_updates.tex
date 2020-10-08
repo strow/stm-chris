@@ -20,7 +20,7 @@
 \title{\large Radiative Transfer Algorithm Updates}
 \subtitle{\footnotesize{AIRS Virtual Science Team Meeting}}
 \date{\vspace{0.1in}\footnotesize{October 2020 \vfill}}
-\author{C. L. Hepplewhite\inst{1,2}, L. Larrabee Strow\inst{1,2}, and S. deSouza Machado\inst{1,2} }
+\author{C. L. Hepplewhite\inst{1,2}, L. Larrabee Strow\inst{1,2}, and S. deSouza Machado\inst{1,2}  and thank to Bill Irion (JPL)}
 \institute[UMBC]{\inst{1} UMBC Physics Dept. \and \inst{2}UMBC JCET}
 \input beamer_setup
 \metroset{titleformat title=allcaps}
@@ -35,7 +35,7 @@
   \item Current and upcoming set of SARTA builds 
   \item Possible future improvements 
   \item Minor fitting improvements
-  \item RTA/HITRAN intercomparisons and tuning issues
+  \item RTA/HITRAN intercomparisons over time and tuning issues
   \end{itemize}
 
 \end{frame}
@@ -46,11 +46,12 @@
   \item CO2, CH4 line mixing from LBLRTM12.8
   \item MT CKD3.2
   \item CO2 CIA from WV and N2 by Hartmann (4.3 um)
+    \begin{itemize}
+    \item Will affect T(z) retrievals using shortwave, needs testing
+    \end{itemize}
   \item Single parameter surface emissivity.
   \item Used in IASI, AIRS L1c, and CHIRP RTAs.
-    
   \end{itemize}
-
 \end{frame}
 % -------------------------------------------------
 \begin{frame}{Current SARTAs at ASL}
@@ -75,7 +76,7 @@
   \begin{itemize}
   \item HITRAN 2020, should be out this year.
   \item Line Mixing package from the HITRAN (Iouli Gordon, Harvard-Smithsonia).
-  \item Currently use kCARTA at 0.0025 cm-1 steps, can move to 0.0005 cm-1 step in 15 \um m region
+  \item Currently use kCARTA at 0.0025 cm-1 steps, can move to 0.0005 cm-1 step in 15 \um region
   \item Interpolation improvements in kCARTA
   \item Nalli surface emissivity parameterization?  Under study.
   \item Improved non-LTE, the extreme solar angles.  Not yet started.
@@ -103,20 +104,20 @@
 \begin{frame}{Improved bias \& std.dev relative to kCARTA}
 
   \begin{itemize}
-  \item kCARTA monochromatic layer-so-space optical depths are convolved to the sensor grid.
-  \item For AIRS (and any spectrometer) convolution with the spectral response functions (SRF) is well behaved. Transmittance approaches zero for opaque channels.
-  \item For interferometers (IASI, CrIS, CHIRP) convolution with the instrument line shape (ILS) produces tau that goes -ve and +ve into the opaque region.
-  \item Regression of the fast coefficients is controlled down to a minimum transmittance which is set by inspection of these 'wings'.
-  \item Sarta builds for IASI, CrIS version 2019 and CHIRP 2020 included some fits in strong (CO2) bands that were not optimal. (See next slides).
+  \item SARTA parameterization based on ratios of convolved kCARTA monochromatic layer-so-space transmittances.
+  \item AIRS SRF (convolution) produced well-behaved layer-averaged transmittances/optical depths.
+  \item Residual since ringing from interferometers (IASI, CrIS, CHIRP) occasionally produce negative optical depths, which are ignore via a threshold that is slightly above zero.
+  \item Last set of  IASI, CrIS, and CHIRP RTA builds exhibited ~0.2K biases errors in certain regions due to this threshold being too high.
+  \item These problems are now fixed, for the most recent set of SARTA builds and for CHIRP.
   \end{itemize}
 
 \end{frame}
 
 % -----------------------------------------------
 \begin{frame}{Example of optimization: CHIRP 640 cm-1}
-
+\vspace{-0.1}
   \begin{center}
-    \includegraphics[width=0.6\linewidth]{./Figs/chirp_optimize1.png}
+    \includegraphics[width=0.75\linewidth]{./Figs/chirp_optimize1_edit.png}
     \captionof{figure}{CHIRP SARTA bias compared to kCARTA, with and without improved regression.}
   \end{center}
 
@@ -128,7 +129,7 @@
 \vspace{-0.5cm}
   \begin{center}
     \includegraphics[width=0.6\linewidth]{./Figs/iasi_sarta_kcarta_mean_bias_4p3um_fx.png}
-    \captionof{figure}{IASI SARTA bias compared to kCARTA, with and without improved regression at 4.3 um.}
+    \captionof{figure}{IASI SARTA bias compared to kCARTA, with and without improved regression at 2300 cm$^{-1}$. Problem at 650 cm$^{-1}$ is now fixed as well.}
   \end{center}
 
 \end{frame}
@@ -168,34 +169,167 @@ Two approaches: (a) Tune the spectroscopy (optical depths), (b) Tune the (Obs - 
 %   \end{itemize}
 
 % \end{frame}
-% ----------------------------------------------
-\begin{frame}{Tuning: Case study}
+% % ----------------------------------------------
+% \begin{frame}{Recent Tuning Studies}
 
-  \begin{block}{}
-  \end{block}
+%   \begin{block}{}
+%   \end{block}
 
-  \begin{itemize}
-  \item Selection of June 25 talk
-  \end{itemize}
+%   \begin{itemize}
 
+%   \end{itemize}
+
+% \end{frame}
+
+%
+
+\begin{frame}[label={sec:org472f9d3}]{Recent Tuning Studies (with Bill Irion)}
+
+Immediate motivation: Help Bill Irion use AIRS L1c and associated AIRS L1c RTA
+
+\begin{itemize}
+\item 17 days of AIRS clear ocean scene radiances are compared to ECMWF simulations
+\item Three RTA variants tested:
+\begin{itemize}
+\item L1c RTA
+\item L1b RTA as tuned for V6 Level 2 retrievals
+\item L1b RTA without tuning
+\end{itemize}
+\item The L1c RTA uses HITRAN 2016 and new (improvements?) to the continuum and line mixing
+\item The L1b RTA is circa 2008
+\item Conclusions here assume ECMWF is "truth".  Better than 5\% --> 0.3K?  Is ECMWF the truth?
+\end{itemize}
 \end{frame}
+
+\begin{frame}[label={sec:orgf207f3e}]{Longwave Biases}
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/bias_3rta_lw.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org87db84f},noframenumbering]{Longwave Biases}
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/bias_3rta_lw_noL1btuning.pdf}
+\end{center}
+%L1c RTA appears a bit better.  (Note fill channels included!)
+\end{frame}
+
+\begin{frame}[label={sec:org2af980b},noframenumbering]{Longwave Biases}
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/bias_3rta_lw_justL1btuning.pdf}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[label={sec:org68cebb3}]{Midwave Biases}
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/bias_3rta_mw.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org5d2824b,noframenumbering}]{Midwave Biases}
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/bias_3rta_mw_noL1btuning.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org22ce356},noframenumbering]{Midwave Biases}
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/bias_3rta_mw_justL1btuning.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org047c8ba}]{650-700 \wn Biases vs BTobs}
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/bias_vs_btobs_650-700.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org6447e1f}]{1320-1614 \wn Biases vs BTobs}
+Similarly for water band, L1b tuned has a clear bias dependence on BTobs
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/bias_vs_btobs_1320-1614.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org9697316}]{Longwave Bias Std. Devs. (with Latitude)}
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/std_3rta_lw.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org0f46d77},noframenumbering]{Longwave Bias Std. Devs. (with Latitude)}
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/std_3rta_lw_noL1btuning.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:orga29dad3},noframenumbering]{Longwave Bias Std. Devs. (with Latitude)}
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/std_3rta_lw_nol1b_untuned.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:orgfcad398}]{Midwave Bias Stds  (with Latitude)}
+\begin{itemize}
+\end{itemize}
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/std_3rta_mw.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org6edc0cf,noframenumbering}]{Midwave Bias Stds  (with Latitude)}
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/std_3rta_mw_noL1btuning.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org916b712},noframenumbering]{Midwave Bias Stds}
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/std_3rta_mw_nol1b untuned.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:org8aa77db}]{1320-1614 \wn Bias Stds versus BTobs}
+Scene dependence of STD, clear increase for cold scenes for L1b Tuned RTA
+\begin{center}
+\includegraphics[width=0.75\linewidth]{./Talk2/std_vs_btobs_1320-1614.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:orgcfca8da}]{Final Effect: L1btuning RTA + Level 2 BT Tuning}
+\begin{itemize}
+\item V6 Level 2 retrieval uses tuned RTA \alert{BUT}
+\item It also does BT tuning.
+\item Except in longwave, they cancel each other out!  NOT GOOD.
+\end{itemize}
+\begin{center}
+\includegraphics[width=0.65\linewidth]{./Talk2/l1b_bttuning_l1b_tunedbias_added.pdf}
+\end{center}
+\end{frame}
+
+
+
+
+
 % ----------------------------------------------
-\begin{frame}{Conclusions}
+% \begin{frame}{Conclusions}
 
-  \begin{block}{}
-  \end{block}
+%   \begin{block}{}
+%   \end{block}
 
-  \begin{itemize}
-  \item RTA (kCARTA and SARTA) development and maintenance continues at UMBC/JCET.
-  \item SARTA for AIRS, CrIS (NSR FSR), IASI and CHIRP have been or are being developed, tested
-    and verified.
-  \item CHIRP SARTA is in progress.
-  \item Tuning for builds from 2019 are either partial or pending.
+%   \begin{itemize}
+
+%   \item CHIRP SARTA now available although further validation at UMBC in progress.
+%   \item New version of all RTAs planned using the new HITRAN 2020, although this assumes improvements to the relevant line parameters and line shape for AIRS/CrIS/CHIRP.
+%   \item Extensive validation push is planned for the future, in concert with tuning exercises for all RTAs.  Water vapor tuning needs to be understood.
+%   \item New lineshape in the 2400 cm$^{-1}$ region needs further validation.
     
-  \end{itemize}
+    
+%   \end{itemize}
 
-\end{frame}
-% -----------------------------------------------
+% \end{frame}
+% % -----------------------------------------------
 
 
 \end{document}
