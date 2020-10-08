@@ -191,9 +191,9 @@ Immediate motivation: Help Bill Irion use AIRS L1c and associated AIRS L1c RTA
 \item 17 days of AIRS clear ocean scene radiances are compared to ECMWF simulations
 \item Three RTA variants tested:
 \begin{itemize}
-\item L1c RTA
-\item L1b RTA as tuned for V6 Level 2 retrievals
-\item L1b RTA without tuning
+\item L1c RTA  (``L1c'')
+\item L1b RTA as tuned for V6 Level 2 retrievals, (``L1b tuned'')
+\item L1b RTA without tuning  (``L1b'')
 \end{itemize}
 \item The L1c RTA uses HITRAN 2016 and new (improvements?) to the continuum and line mixing
 \item The L1b RTA is circa 2008
@@ -310,6 +310,27 @@ Scene dependence of STD, clear increase for cold scenes for L1b Tuned RTA
 \begin{center}
 \includegraphics[width=0.65\linewidth]{./Talk2/l1b_bttuning_l1b_tunedbias_added.pdf}
 \end{center}
+\end{frame}
+
+\begin{frame}{Tuning Summary}
+\begin{itemize}
+\item Longwave (CO$_2$)
+  \begin{itemize}
+  \item Biases and Stds: L1c better in general than L1b and L1b-tuned
+  \end{itemize}
+\item Midwave (water)
+  \begin{itemize}
+  \item Biases:  L1b better in general than L1c, L1b tuned bias quite bad
+  \item Stds: L1b slightly lower than L1c, L1b tuned quite bad
+  \item B(T) tuning:  L1b tuned bias errors ``compensated'' by static B(T) tuning!  Not good.
+  \end{itemize}
+\end{itemize}
+
+Do we just assume ECMWF is correct?
+
+How much effort should be put into radiosonde validation?
+
+If Level 2 efforts aimed at reproducing ECMWF, then radiosonde validation efforts not worth the work.
 \end{frame}
 
 
